@@ -14,7 +14,7 @@
 - **Figma Brief:** [View on Figma](https://www.figma.com/design/eUqFtYyvhzt4lsixYdBrOA/Cyber-Wizards---Startup?node-id=0-1&t=6Ojwuomh65hvPXst-1)
 - **GitHub Repository:** [View on GitHub](https://github.com/Youcode-Classe-E-2024-2025/Cyber-Wizards-Startup.git)
 - **Hosted Page:** [View Live](https://youcode-classe-e-2024-2025.github.io/Startup_Cyber_Wizards/)
-- **Color Palette:** [View Color Palette]()
+- **Color Palette:** [View Color Palette](https://coolors.co/palette/4682b4-b0c4de-f0f8ff-ff6347)
 
 ### **Level :** Niveau 1
 
