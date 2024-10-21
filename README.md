@@ -2,8 +2,10 @@
 
 **Niveau 1 - Developper son business**
 
-**Author du Brief:** Iliass RAIHANI.
-**Scrum Master:**AbdelMouhaimine Eljassimi.
+**Author du Brief:** Iliass RAIHANI. 
+
+**Scrum Master:** AbdelMouhaimine Eljassimi. 
+
 **collaborateur :** Ibrahim Nidam - AbdeAli latifi - Amine Sabri - Oumaima Ait Said.
 
 ## Links
