@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+body{
+  overflow-x: hidden;
+}
 
 /* ----------------------- Debut Navbar -------------------------- */
 nav {
@@ -185,12 +188,8 @@ h1 {
   border-radius: 8px;
 }
 
-.section-team {
-  padding: 50px;
-  text-align: center;
-  justify-content: space-around;
-  margin-bottom: 50px;
-}
+
+
 
 
 /* ------------------------ Fin About --------------------------- */
