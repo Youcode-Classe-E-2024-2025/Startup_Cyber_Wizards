@@ -10,6 +10,28 @@ body{
 
 
 /* ----------------------- Debut index -------------------------- */
+
+
+.footer{
+    background-color: rgb(28, 28, 28);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer h3{
+    color: white;
+    padding: 5px;
+
+}
+.footer a i{
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+}
+.footer .logo a img{
+    width: 200px;
+    padding: 5px;
+}
 /* ------------------------ Fin index --------------------------- */
 
 
