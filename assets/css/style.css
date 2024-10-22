@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
     font-family: "Inter", sans-serif;
 }
 
@@ -27,11 +24,34 @@ body{
     color: white;
     font-size: 30px;
     padding: 5px;
+    transition: color 0.3s;
+}
+.footer a i:hover{
+    color: #FF6347;
 }
 .footer .logo a img{
     width: 200px;
     padding: 5px;
 }
+.footer ul{
+    display: flex;
+    gap: 10px;
+}
+.footer ul li{
+    list-style: none;
+    color: #fff;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+.footer ul li a:hover{
+    color: #FF6347;
+}
+
 /* ------------------------ Fin index --------------------------- */
 
 
@@ -47,6 +67,100 @@ body{
 
 
 /* ------------------------ Debut All products --------------------------- */
+
+header{
+    /* border: 2px solid black; */
+    box-shadow: 0 1px 4px rgb(0, 0, 0.1,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    line-height: 60px;
+}
+
+header img{
+    width: 100px;
+    height:100 px;
+}
+
+header .links-nav{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header .links-nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+header .links-nav ul li{
+    list-style: none;
+    color: #fff;
+}
+
+header .links-nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header .links-nav i{
+    font-size: 18px;
+}
+
+.Products .desc-Product{
+    margin-top: 5rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+.group-card{
+    padding: 30px 350px;
+    display: flex;
+    
+}
+.group-card .card:hover{
+    transform: scale(1.05);
+    
+}
+.group-card .card{
+    background-color: #faf8f8;
+    box-shadow:0 0.1PX 10PX rgba(0, 0, 0, 0.299);
+    width: 16rem;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    transition: transform 0.3s ease;
+    
+}
+.group-card .card img{
+    height: 17rem;
+}
+
+.group-card .card .info-Tshirt{
+    margin-top: 10px;
+}
+.group-card .card button{
+    width: 150px;
+    height:1.5rem;
+    color: #fff;
+    background-color: #4682B4;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+    transition : background-color 0.5s;
+}
+
+.group-card .card button:hover{
+    background-color: #FF6347;
+}
 /* ------------------------ Fin All products --------------------------- */
 
 
