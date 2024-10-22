@@ -1,3 +1,11 @@
+:root{
+    /* COLORS */
+    --BG-white-color:white;
+    --Hover-orange-color:#FF6347;
+    --Button-blue-color:#4682B4;
+    --Light-blue-color:#B0C4DE;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +14,7 @@
 }
 
 /* ----------------------- Debut Navbar -------------------------- */
-header {
+nav {
   box-shadow: 0 1px 4px rgb(0, 0, 0.1, 0.2);
   display: flex;
   justify-content: space-between;
@@ -15,38 +23,38 @@ header {
   line-height: 60px;
 }
 
-header img {
+nav img {
   width: 100px;
   cursor: pointer;
 }
 
-header .links-nav {
+nav .links-nav {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-header .links-nav ul {
+nav .links-nav ul {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-header .links-nav ul li {
+nav .links-nav ul li {
   list-style: none;
-  color: #fff;
+  color: var(--BG-white-color);
 }
 
-header .links-nav ul li a {
+nav .links-nav ul li a {
   text-decoration: none;
   color: black;
   transition: color 0.3s;
 }
-header .links-nav ul li a:hover,
-header .links-nav i:hover {
-  color: #ff6347;
+nav .links-nav ul li a:hover,
+nav .links-nav i:hover {
+  color: var(--Hover-orange-color);
 }
 
-header .links-nav i {
+nav .links-nav i {
   font-size: 18px;
   cursor: pointer;
 }
@@ -56,6 +64,57 @@ header .links-nav i {
 /* ------------------------ Fin Side-Navbar --------------------------- */
 
 /* ----------------------- Debut index page -------------------------- */
+
+/* SLIDER section */
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width:400%;
+    margin: 0;
+    left: 0;
+    animation: 20s sliderAni infinite;
+}
+
+#slider figure img{
+    width: 25%;
+    height:100vh ;
+    float: left;
+
+}
+@keyframes sliderAni {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left:-400%;
+    }
+}
+
+
+
 
 /* ------------------------ Fin index Page --------------------------- */
 
@@ -104,8 +163,8 @@ header .links-nav i {
 .group-card .card button {
   width: 150px;
   height: 1.5rem;
-  color: #fff;
-  background-color: #4682b4;
+  color: var(--BG-white-color);
+  background-color: var(--Button-blue-color);
   border-radius: 5px;
   border: none;
   margin-top: 5px;
@@ -114,7 +173,7 @@ header .links-nav i {
 }
 
 .group-card .card button:hover {
-  background-color: #ff6347;
+  background-color: var(--Hover-orange-color);
 }
 /* ------------------------ Fin All products --------------------------- */
 
@@ -133,17 +192,17 @@ header .links-nav i {
   align-items: center;
 }
 .footer h3 {
-  color: white;
+  color: var(--BG-white-color);
   padding: 5px;
 }
 .footer a i {
-  color: white;
+  color: var(--BG-white-color);
   font-size: 30px;
   padding: 5px;
   transition: color 0.3s;
 }
 .footer a i:hover {
-  color: #ff6347;
+  color: var(--Hover-orange-color);
 }
 .footer .logo a img {
   width: 200px;
@@ -155,17 +214,17 @@ header .links-nav i {
 }
 .footer ul li {
   list-style: none;
-  color: #fff;
+  color: var(--BG-white-color);
 }
 
 .footer ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--BG-white-color);
   font-size: 20px;
   transition: color 0.3s;
 }
 .footer ul li a:hover {
-  color: #ff6347;
+  color: var(--Hover-orange-color);
 }
 
 /* ------------------------ Fin Footer --------------------------- */
