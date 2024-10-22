@@ -55,6 +55,51 @@ header .links-nav i {
 /* ------------------------ Fin Side-Navbar --------------------------- */
 
 /* ----------------------- Debut index -------------------------- */
+
+
+.footer{
+    background-color: rgb(28, 28, 28);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer h3{
+    color: white;
+    padding: 5px;
+
+}
+.footer a i{
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    transition: color 0.3s;
+}
+.footer a i:hover{
+    color: #FF6347;
+}
+.footer .logo a img{
+    width: 200px;
+    padding: 5px;
+}
+.footer ul{
+    display: flex;
+    gap: 10px;
+}
+.footer ul li{
+    list-style: none;
+    color: #fff;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+.footer ul li a:hover{
+    color: #FF6347;
+}
+
 /* ------------------------ Fin index --------------------------- */
 
 /* ----------------------- Debut Products page -------------------------- */
