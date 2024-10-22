@@ -4,13 +4,28 @@
     --Hover-orange-color:#FF6347;
     --Button-blue-color:#4682B4;
     --Light-blue-color:#B0C4DE;
+    --Cards-grey-color:#F4F4F4;
+    --text-grey-color:#9F9F9F;
+    
+
+    
+    
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    color: inherit; 
+    text-decoration: inherit;
+}
+
+input[type="radio"] {
+    display: none;
 }
 
 /* ----------------------- Debut Navbar -------------------------- */
@@ -65,7 +80,7 @@ nav .links-nav i {
 
 /* ----------------------- Debut index page -------------------------- */
 
-/* SLIDER section */
+/* Slider section */
 #slider{
     overflow: hidden;
 }
@@ -105,15 +120,136 @@ nav .links-nav i {
     75%{
         left: -300%;
     }
-    95%{
-        left: -300%;
-    }
     100%{
-        left:-400%;
+        left:-300%;
     }
 }
 
+/* categorie section */
+.big-title{
+    padding: 20px;
+    text-align: center;
+}
 
+.big-title h1 {
+    font-size: calc(.3rem + 3vw);
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+
+.big-title p {
+    font-size: calc(0.5rem + 1.5vw);
+    color: var(--text-grey-color);
+}
+
+.big-title .light-blue{
+    color: var(--Button-blue-color);
+}
+
+.categorie-names{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.25rem;
+    background-color: var(--Cards-grey-color);
+    font-size: calc(1rem + .5vw);
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.section-categorie-styles{
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.section-categorie-styles:hover{
+    color: var(--Hover-orange-color);
+    transform: scale(1.05);
+}
+
+
+#categories{
+    margin-bottom: 2rem;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cards{
+    position: relative;
+    background-color: var(--Cards-grey-color);
+    box-shadow: 0 0.1px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-radius: 10px;
+    padding: .5rem;
+    padding-bottom: 1rem;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.cards:hover{
+    transform: scale(1.05);
+}
+
+.cards img{
+    margin-bottom: .3rem;
+}
+
+.cards p{
+    margin-bottom: .5rem;
+}
+
+.button{
+    color: var(--BG-white-color);
+    background-color: var(--Button-blue-color);
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: .3rem .5rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.button:hover{
+    background-color: var(--Hover-orange-color);
+}
+
+.best-seller{
+    background-color: var(--Button-blue-color);
+    padding:0.15rem;
+    position: absolute;
+    border-radius: 1rem;
+    top: 1rem;
+    left: 1rem;
+    font-size: 0.6rem;
+    color: var(--BG-white-color);
+}
+
+.best-seller p{
+    margin-bottom: 0;
+}
+.promo{
+    position: absolute;
+    color: red;
+    right: 1rem;
+    top: 1rem;
+    font-size: 0.6rem;
+}
+
+.article {
+    display: none; 
+}
+
+#toggle1:checked ~ .article1 {
+    display: block;
+}
+
+#toggle2:checked ~ .article2 {
+    display: block;
+}
+
+#toggle3:checked ~ .article3 {
+    display: block;
+}
 
 
 /* ------------------------ Fin index Page --------------------------- */
@@ -137,14 +273,15 @@ nav .links-nav i {
 }
 
 .group-card {
-  padding: 30px 350px;
+  /* padding: 30px 350px; */
   display: flex;
+  justify-content: space-around;
 }
 .group-card .card:hover {
   transform: scale(1.05);
 }
 .group-card .card {
-  background-color: #faf8f8;
+  background-color: var(--Cards-grey-color);
   box-shadow: 0 0.1px 10px rgba(0, 0, 0, 0.299);
   width: 16rem;
   text-align: center;
