@@ -1,12 +1,14 @@
 :root{
     /* COLORS */
-    --BG-white-color:white;
+    --BG-white-color:#ffffff;
     --Hover-orange-color:#FF6347;
     --Button-blue-color:#4682B4;
     --Light-blue-color:#B0C4DE;
     --Cards-grey-color:#F4F4F4;
     --text-grey-color:#9F9F9F;
     
+    /* FONTS */
+    --Fonts-size-16px : 1rem;
 
     
     
@@ -75,8 +77,10 @@ nav .links-nav i {
 }
 /* ------------------------ Fin Navbar --------------------------- */
 
+
 /* ----------------------- Debut Side-Navbar -------------------------- */
 /* ------------------------ Fin Side-Navbar --------------------------- */
+
 
 /* ----------------------- Debut index page -------------------------- */
 
@@ -242,13 +246,25 @@ nav .links-nav i {
 #toggle1:checked ~ .article1 {
     display: block;
 }
+#toggle1:checked ~ .categorie-names .section-categorie-styles:nth-child(1) {
+    scale: 1.05;
+    color: var(--Hover-orange-color);
+}
 
 #toggle2:checked ~ .article2 {
     display: block;
 }
+#toggle2:checked ~ .categorie-names .section-categorie-styles:nth-child(2) {
+    scale: 1.05;
+    color: var(--Hover-orange-color);
+}
 
 #toggle3:checked ~ .article3 {
     display: block;
+}
+#toggle3:checked ~ .categorie-names .section-categorie-styles:nth-child(3) {
+    scale: 1.05;
+    color: var(--Hover-orange-color);
 }
 
 
