@@ -274,6 +274,46 @@ nav .links-nav i {
 /* ------------------------ Fin index --------------------------- */
 
 /* ----------------------- Debut Products page -------------------------- */
+.mainimage{
+  width: 300px;
+}
+.more_images{
+  display: flex;
+  gap: 5px;
+}
+.more_images img{
+  width: 50px;
+  height: 50px;
+}
+.content{
+  display: flex;
+  gap: 50px;
+}
+.prix{
+  display: flex;
+  gap: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.prix p{
+  font-size: 30px;
+  font-weight: 400;
+}
+.taille{
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.taille .radio{
+  padding-top: 2px;
+  display: flex;
+  gap: 5px;
+}
+
+.radio input{
+   accent-color: #ff6347;
+}
 /* ------------------------ Fin Products Page --------------------------- */
 
 /* ------------------------ Debut All products --------------------------- */
