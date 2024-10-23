@@ -5,9 +5,6 @@
   font-family: "Inter", sans-serif;
 }
 
-/*body{
-  overflow-x: hidden;
-}*/
 
 /* ----------------------- Debut Navbar -------------------------- */
 nav {
@@ -235,6 +232,7 @@ h1 {
   font-size: 20px;
 
 }
+
 /* ------------------------ MEDIA QUERY --------------------------- */
 @media(max-width:600px) {
   .section1-image {
