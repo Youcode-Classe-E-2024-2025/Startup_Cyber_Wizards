@@ -293,5 +293,13 @@ h1 {
 .footer ul li a:hover {
   color: #ff6347;
 }
+@media(max-width:600px){
+  .footer h3 {
+    margin-left: 15px;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+}
 
 /* ------------------------ Fin Footer --------------------------- */
