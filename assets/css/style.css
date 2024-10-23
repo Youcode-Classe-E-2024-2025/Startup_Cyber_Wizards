@@ -1,8 +1,33 @@
+:root{
+    /* COLORS */
+    --BG-white-color:#ffffff;
+    --Hover-orange-color:#FF6347;
+    --Button-blue-color:#4682B4;
+    --Light-blue-color:#B0C4DE;
+    --Cards-grey-color:#F4F4F4;
+    --text-grey-color:#9F9F9F;
+    
+    /* FONTS */
+    --Fonts-size-16px : 1rem;
+
+    
+    
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    color: inherit; 
+    text-decoration: inherit;
+}
+
+input[type="radio"] {
+    display: none;
 }
 
 /* ----------------------- Debut Navbar -------------------------- */
@@ -33,7 +58,7 @@ nav .links-nav ul {
 }
 nav .links-nav ul li {
   list-style: none;
-  color: #fff;
+  color: var(--BG-white-color);
 }
 
 nav .links-nav ul li a {
@@ -43,7 +68,7 @@ nav .links-nav ul li a {
 }
 nav .links-nav ul li a:hover,
 nav .links-nav i:hover {
-  color: #ff6347;
+  color: var(--Hover-orange-color);
 }
 
 nav .links-nav i {
@@ -52,10 +77,196 @@ nav .links-nav i {
 }
 /* ------------------------ Fin Navbar --------------------------- */
 
+
 /* ----------------------- Debut Side-Navbar -------------------------- */
 /* ------------------------ Fin Side-Navbar --------------------------- */
 
+
 /* ----------------------- Debut index page -------------------------- */
+
+/* Slider section */
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width:400%;
+    margin: 0;
+    left: 0;
+    animation: 20s sliderAni infinite;
+}
+
+#slider figure img{
+    width: 25%;
+    height:100vh ;
+    float: left;
+
+}
+@keyframes sliderAni {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    100%{
+        left:-300%;
+    }
+}
+
+/* categorie section */
+.big-title{
+    padding: 20px;
+    text-align: center;
+}
+
+.big-title h1 {
+    font-size: calc(.3rem + 3vw);
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+
+.big-title p {
+    font-size: calc(0.5rem + 1.5vw);
+    color: var(--text-grey-color);
+}
+
+.big-title .light-blue{
+    color: var(--Button-blue-color);
+}
+
+.categorie-names{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.25rem;
+    background-color: var(--Cards-grey-color);
+    font-size: calc(1rem + .5vw);
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.section-categorie-styles{
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.section-categorie-styles:hover{
+    color: var(--Hover-orange-color);
+    transform: scale(1.05);
+}
+
+
+#categories{
+    margin-bottom: 2rem;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cards{
+    position: relative;
+    background-color: var(--Cards-grey-color);
+    box-shadow: 0 0.1px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-radius: 10px;
+    padding: .5rem;
+    padding-bottom: 1rem;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.cards:hover{
+    transform: scale(1.05);
+}
+
+.cards img{
+    margin-bottom: .3rem;
+}
+
+.cards p{
+    margin-bottom: .5rem;
+}
+
+.button{
+    color: var(--BG-white-color);
+    background-color: var(--Button-blue-color);
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: .3rem .5rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.button:hover{
+    background-color: var(--Hover-orange-color);
+}
+
+.best-seller{
+    background-color: var(--Button-blue-color);
+    padding:0.15rem;
+    position: absolute;
+    border-radius: 1rem;
+    top: 1rem;
+    left: 1rem;
+    font-size: 0.6rem;
+    color: var(--BG-white-color);
+}
+
+.best-seller p{
+    margin-bottom: 0;
+}
+.promo{
+    position: absolute;
+    color: red;
+    right: 1rem;
+    top: 1rem;
+    font-size: 0.6rem;
+}
+
+.article {
+    display: none; 
+}
+
+#toggle1:checked ~ .article1 {
+    display: block;
+}
+#toggle1:checked ~ .categorie-names .section-categorie-styles:nth-child(1) {
+    scale: 1.05;
+    color: var(--Hover-orange-color);
+}
+
+#toggle2:checked ~ .article2 {
+    display: block;
+}
+#toggle2:checked ~ .categorie-names .section-categorie-styles:nth-child(2) {
+    scale: 1.05;
+    color: var(--Hover-orange-color);
+}
+
+#toggle3:checked ~ .article3 {
+    display: block;
+}
+#toggle3:checked ~ .categorie-names .section-categorie-styles:nth-child(3) {
+    scale: 1.05;
+    color: var(--Hover-orange-color);
+}
+
 
 /* ------------------------ Fin index Page --------------------------- */
 
@@ -118,14 +329,15 @@ nav .links-nav i {
 }
 
 .group-card {
-  padding: 30px 350px;
+  /* padding: 30px 350px; */
   display: flex;
+  justify-content: space-around;
 }
 .group-card .card:hover {
   transform: scale(1.05);
 }
 .group-card .card {
-  background-color: #faf8f8;
+  background-color: var(--Cards-grey-color);
   box-shadow: 0 0.1px 10px rgba(0, 0, 0, 0.299);
   width: 16rem;
   text-align: center;
@@ -144,8 +356,8 @@ nav .links-nav i {
 .group-card .card button {
   width: 150px;
   height: 1.5rem;
-  color: #fff;
-  background-color: #4682b4;
+  color: var(--BG-white-color);
+  background-color: var(--Button-blue-color);
   border-radius: 5px;
   border: none;
   margin-top: 5px;
@@ -154,7 +366,7 @@ nav .links-nav i {
 }
 
 .group-card .card button:hover {
-  background-color: #ff6347;
+  background-color: var(--Hover-orange-color);
 }
 /* ------------------------ Fin All products --------------------------- */
 
@@ -173,17 +385,17 @@ nav .links-nav i {
   align-items: center;
 }
 .footer h3 {
-  color: white;
+  color: var(--BG-white-color);
   padding: 5px;
 }
 .footer a i {
-  color: white;
+  color: var(--BG-white-color);
   font-size: 30px;
   padding: 5px;
   transition: color 0.3s;
 }
 .footer a i:hover {
-  color: #ff6347;
+  color: var(--Hover-orange-color);
 }
 .footer .logo a img {
   width: 200px;
@@ -195,17 +407,17 @@ nav .links-nav i {
 }
 .footer ul li {
   list-style: none;
-  color: #fff;
+  color: var(--BG-white-color);
 }
 
 .footer ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--BG-white-color);
   font-size: 20px;
   transition: color 0.3s;
 }
 .footer ul li a:hover {
-  color: #ff6347;
+  color: var(--Hover-orange-color);
 }
 
 /* ------------------------ Fin Footer --------------------------- */
