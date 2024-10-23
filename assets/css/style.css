@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
 /*body{
   overflow-x: hidden;
 }*/
@@ -187,22 +188,24 @@ h1 {
   width: 500px;
   border-radius: 8px;
 }
+
 .section-team {
-  padding: 50px ; 
+  padding: 50px;
   text-align: center;
-  justify-content: space-around;margin-bottom: 50px;
+  justify-content: space-around;
+  margin-bottom: 50px;
 }
 
 .grid-team {
-  
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   justify-items: space-around;
   gap: 30px;
   margin-top: 90px;
-  
-  
+
+
 }
 
 .member-team {
@@ -218,7 +221,7 @@ h1 {
   height: 250px;
   object-fit: cover;
   margin-bottom: px;
-  border-radius: 8px 8px 0  0;
+  border-radius: 8px 8px 0 0;
 }
 
 
@@ -230,7 +233,52 @@ h1 {
 .member-team i {
   color: #666;
   font-size: 20px;
-  
+
+}
+/* ------------------------ MEDIA QUERY --------------------------- */
+@media(max-width:600px) {
+  .section1-image {
+    margin-left: 10em;
+  }
+
+  .section1-image img {
+    width: 300px;
+
+  }
+
+  .section1-content {
+    margin-left: 0px;
+    margin-right: 200px;
+    font-size: 20px;
+    background-color: #ffffff;
+    width: 250px;
+    height: 450px;
+  }
+
+  .grid-team {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-content: center;
+    gap: 30px;
+  }
+
+  .member-team {
+    width: 180px;
+  }
+
+  .member-team img {
+    width: 180px;
+  }
+
+  .section-team {
+    padding: 1px;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
 }
 
 
@@ -293,13 +341,14 @@ h1 {
 .footer ul li a:hover {
   color: #ff6347;
 }
-@media(max-width:600px){
+
+@media(max-width:600px) {
   .footer h3 {
     margin-left: 15px;
     font-size: 15px;
     text-align: center;
   }
-  
+
 }
 
 /* ------------------------ Fin Footer --------------------------- */
