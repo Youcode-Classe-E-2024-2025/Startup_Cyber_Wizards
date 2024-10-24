@@ -15,7 +15,7 @@
   --scale-animation: 1.05;
 }
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -98,12 +98,12 @@ nav .links-nav i {
 .sidebar {
   position: absolute;
   top: 100%;
-  right: -250px;
   width: 150px;
   background-color: var(--BG-white-color);
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
   transition: right 0.3s ease;
   z-index: 999;
+  display: none;
 }
 
 header {
@@ -137,6 +137,7 @@ header {
 #menu-toggle:checked ~ .sidebar {
   right: 0;
   z-index: 2;
+  display:inline-block;
 }
 
 @media (max-width: 600px) {
@@ -152,7 +153,7 @@ header {
 @media (min-width: 601px) {
   .sidebar {
     right: -250px !important;
-  }
+}
 }
 
 /* ------------------------ Fin Navbar --------------------------- */
