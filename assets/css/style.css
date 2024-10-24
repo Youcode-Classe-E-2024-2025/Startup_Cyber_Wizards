@@ -529,20 +529,15 @@ header {
 
 /* ----------------------- Debut Products page -------------------------- */
 
-.mainimage {
-  width: 300px;
-}
-.more_images {
-
+.contentt{
   display: flex;
   justify-content: center;
   margin-top: 100px;
   gap: 5px;
-  /* border: 5px solid red; */
   flex-wrap: wrap;
 }
 
-.content .image{
+.contentt .image{
   /* border: 2px solid red; */
   width: 35rem;
   display: flex;
@@ -552,7 +547,7 @@ header {
   /* border: 3px solid green; */
 }
 
-.content .mainimage{
+.contentt .mainimage{
   /* border: 1px solid red; */
   height: 600px;
   width: 440px;
@@ -560,16 +555,11 @@ header {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
   
 }
-
-.more_images img {
-  width: 50px;
-  height: 50px;
-}
-.content {
+.contentt .more_images{
   display: flex;
   gap: 10px;
 }
-.content .more_images img{
+.contentt .more_images img{
   width: 60px;
   height: 60px;
   margin-top: 10px;
@@ -585,13 +575,13 @@ header {
 .disponability p{
   font-weight: bold;
 }
-.prix {
+.prix{
   display: flex;
   gap: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.prix p {
+.prix p{
   font-size: 30px;
   font-weight: 400;
   
@@ -619,19 +609,18 @@ header {
 .description ul li{
   margin-top: 10px;
 }
-.taille {
+.taille{
   display: flex;
   gap: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: bold;
 }
-.taille .radio {
+.taille .radio{
   padding-top: 2px;
   display: flex;
   gap: 5px;
 }
-
 
 input[type="radio"] {
   appearance: none;
@@ -710,9 +699,6 @@ input[type="radio"]:checked::before {
   margin-top: 5px;
   
   
-
-.radio input {
-  accent-color: #ff6347;
 }
 /* ------------------------ Fin Products Page --------------------------- */
 
