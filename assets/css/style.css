@@ -30,7 +30,6 @@ input[type="radio"] {
     display: none;
 }
 
-
 /* ----------------------- Debut Navbar -------------------------- */
 nav {
   box-shadow: 0 1px 4px rgb(0, 0, 0.1, 0.2);
@@ -336,6 +335,7 @@ nav .links-nav i {
   /* padding: 30px 350px; */
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .group-card .card:hover {
@@ -404,6 +404,7 @@ h1 {
   font-size: 30px;
 
 
+
 }
 
 .section1 {
@@ -453,11 +454,9 @@ h1 {
   justify-items: space-around;
   gap: 30px;
   margin-top: 90px;
-
-
 }
 
-.member-team {
+.member-team1 {
   text-align: center;
   background-color: #f4f4f4;
   width: 300px;
@@ -465,28 +464,217 @@ h1 {
   border-radius: 15px;
 }
 
-.member-team img {
+.member-team1 img { 
   width: 300px;
   height: 250px;
   object-fit: cover;
-  margin-bottom: px;
   border-radius: 8px 8px 0 0;
+  position: absolute;
+  display: flex;
+  transition: ease-out;
+  cursor: pointer;
 }
 
 
-.member-team h3 {
+.member-team1 h3 {
   margin-bottom: 5px;
   color: #333;
+  position: relative;
+  top: 260px;
 }
 
-.member-team i {
+.member-team1 i {
   color: #666;
   font-size: 20px;
+  position: relative;
+  top: 260px;
 
 }
+
+#img1 {
+  opacity: 0;
+}
+
+#img1:hover {
+  opacity: 1;
+}
+
+.member-team2 {
+  text-align: center;
+  background-color: #f4f4f4;
+  width: 300px;
+  height: 330px;
+  border-radius: 15px;
+}
+
+.member-team2 img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  position: absolute;
+  display: flex;
+  transition: ease-out;
+  cursor: pointer;
+}
+
+
+.member-team2 h3 {
+  margin-bottom: 5px;
+  color: #333;
+  position: relative;
+  top: 260px;
+}
+
+.member-team2 i {
+  color: #666;
+  font-size: 20px;
+  position: relative;
+  top: 260px;
+
+}
+
+#img2 {
+  opacity: 0;
+}
+
+#img2:hover {
+  opacity: 1;
+}
+
+.member-team3 {
+  text-align: center;
+  background-color: #f4f4f4;
+  width: 300px;
+  height: 330px;
+  border-radius: 15px;
+}
+
+.member-team3 img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  position: absolute;
+  display: flex;
+  transition: ease-out;
+  cursor: pointer;
+}
+
+
+.member-team3 h3 {
+  margin-bottom: 5px;
+  color: #333;
+  position: relative;
+  top: 260px;
+}
+
+.member-team3 i {
+  color: #666;
+  font-size: 20px;
+  position: relative;
+  top: 260px;
+
+}
+
+#img3 {
+  opacity: 0;
+}
+
+#img3:hover {
+  opacity: 1;
+}
+
+.member-team4 {
+  text-align: center;
+  background-color: #f4f4f4;
+  width: 300px;
+  height: 330px;
+  border-radius: 15px;
+}
+
+.member-team4 img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  position: absolute;
+  display: flex;
+  transition: ease-out;
+  cursor: pointer;
+  
+}
+
+
+.member-team4 h3 {
+  margin-bottom: 5px;
+  color: #333;
+  position: relative;
+  top: 260px;
+}
+
+.member-team4 i {
+  color: #666;
+  font-size: 20px;
+  position: relative;
+  top: 260px;
+
+}
+
+#img4 {
+  opacity: 0;
+}
+
+#img4:hover {
+  opacity: 1;
+}
+
+.member-team5 {
+  text-align: center;
+  background-color: #f4f4f4;
+  width: 300px;
+  height: 330px;
+  border-radius: 15px;
+}
+
+.member-team5 img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  position: absolute;
+  display: flex;
+  transition: ease-out;
+  cursor: pointer;
+}
+
+#img5 {
+  opacity: 0;
+}
+
+#img5:hover {
+  opacity: 1;
+}
+
+.member-team5 h3 {
+  margin-bottom: 5px;
+  color: #333;
+  position: relative;
+  top: 260px;
+}
+
+.member-team5 i {
+  color: #666;
+  font-size: 20px;
+  position: relative;
+  top: 260px;
+
+}
+
 
 /* ------------------------ MEDIA QUERY --------------------------- */
 @media(max-width:600px) {
+
   .section1-image {
     margin-left: 10em;
   }
@@ -534,7 +722,7 @@ h1 {
 
 
 
-
+/* Fin Media Query */
 
 /* ------------------------ Fin About --------------------------- */
 
