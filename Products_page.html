@@ -26,19 +26,31 @@
 </head>
 <body>
   <!-----------------------------navbar--------------------------->
-  <header>
+  <header >
     <nav>
-      <img src="./assets/images/logo/logo black.png" alt="logo">
+      <img src="./assets/images/logo/logo black.png" alt="logo" />
       <div class="links-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
           <li><a href="All_products.html">Products</a></li>
           <li><a href="About.html">About</a></li>
           <li><a href="FAQ.html">FAQ</a></li>
         </ul>
         <i class="bi bi-bag"></i>
+        <label for="menu-toggle" class="burger-menu"><i class="bi bi-list"></i></label>
       </div>
     </nav>
+    <input type="checkbox" id="menu-toggle" />
+
+
+    <div class="sidebar">
+      <ul>
+        <li><a href="All_products.html">Products</a></li>
+        <div class="grey-line"></div>
+        <li><a href="About.html">About</a></li>
+        <div class="grey-line"></div>
+        <li><a href="FAQ.html">FAQ</a></li>
+      </ul>
+    </div>
   </header>
   <!-- ------------------------------------------------------------- -->
   <section class="contentt">
@@ -50,39 +62,38 @@
                 <img src="assets/images/T-shirts/Product 1/odhazohdoahz.jpg" alt="">
             </div>
         </div>
-        <div class="text">
-          <h1>T-SHIRT WHITE SOHO</h1>
-        <div class="prix">
-          <del style="color: #828181; font-size: 30px;">699$</del>
-          <p style="color:#ff6347;">499$</p>
-        </div>
-        <div class="disponability">
-          <p>DISPONIBILITY : <span style="color: #ff6347;">IN STOCK</span></p>
-        </div>
-        <div class="taille">
-          <p>TAILLE : </p>
-          <div class="radio">
-            <label>S </label><input type="radio" name="option" value="S">
-            <label>M </label><input type="radio" name="option" value="M">
-            <label>L </label><input type="radio" name="option" checked = "checked" value="L">
-            <label>XL </label><input type="radio" name="option" value="XL">
-            <label>XXL </label><input type="radio" name="option" value="XXL">
+      <div class="text">
+            <h1>T-SHIRT WHITE SOHO</h1>
+          <div class="prix">
+            <del style="color: #828181; font-size: 30px;">699$</del>
+            <p style="color:#ff6347;">499$</p>
           </div>
-        </div>
-        <div class="button_add_to_card">
-          <button>ADD TO CARD</button>
-        </div>
-        <div class="description">
-          <h4>DESCRIPTION :</h4>
-              <ul style="list-style-position: inside;margin-left:15px; padding: 0;">
-                <li>Introducing the White "SOHO" T-Shirt: A stylish and versatile &nbsp;&nbsp;&nbsp;&nbsp; wardrobe essential.</li>          
-                <li>Premium cotton fabric: Offers ultimate comfort and a sleek, &nbsp;&nbsp;&nbsp;&nbsp; modern design.</li>
-                <li>Minimalist "SOHO" print: Adds a touch of urban flair for &nbsp;&nbsp;&nbsp;&nbsp;casual outings.</li>
-                <li>Perfect for layering: Pairs well with your favorite jacket.</li>
-                <li>Effortless style: Ideal for both dressing up and keeping it &nbsp;&nbsp;&nbsp;&nbsp;simple.</li>
-                <li>A must-have: Elevates any wardrobe with its chic, minimalist &nbsp;&nbsp;&nbsp;&nbsp; vibe.</li>
-              </ul>
-        </div>
+          <div class="disponability">
+            <p>DISPONIBILITY : <span style="color: #ff6347;">IN STOCK</span></p>
+          </div>
+          <div class="taille">
+            <p>TAILLE : </p>
+            <div class="radio">
+              <label>S </label><input type="radio" name="option" value="S">
+              <label>M </label><input type="radio" name="option" value="M">
+              <label>L </label><input type="radio" name="option" checked = "checked" value="L">
+              <label>XL </label><input type="radio" name="option" value="XL">
+              <label>XXL </label><input type="radio" name="option" value="XXL">
+            </div>
+          </div>
+          <div class="button_add_to_card">
+              <button>ADD TO CARD</button>
+          </div>
+          <div class="description">
+            <h4>DESCRIPTION :</h4>
+              <div class="list">
+                <p><span>&#8226;</span>Premium Quality Materials: Designed with high-quality fabrics to ensure durability and lasting comfort.</p>         
+                <p><span>&#8226;</span>Modern Design: Sleek, contemporary styles that suit any occasion.</p> 
+                <p><span>&#8226;</span>Perfect Fit: Available in a range of sizes, providing a tailored fit for everyone.</p>
+                <p><span>&#8226;</span>Versatile Wear: Ideal for casual outings, workouts, or just relaxing at home.</p>
+                <p><span>&#8226;</span>Effortless Style: Elevate your wardrobe with pieces that blend seamlessly into any look.</p>
+              </div>
+          </div>
       </div>
 
       
