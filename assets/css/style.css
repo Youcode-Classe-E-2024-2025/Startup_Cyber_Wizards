@@ -211,7 +211,7 @@ h1 {
   border-radius: 15px;
 }
 
-.member-team1 img {
+.member-team1 img { 
   width: 300px;
   height: 250px;
   object-fit: cover;
@@ -469,7 +469,7 @@ h1 {
 
 
 
-
+/* Fin Media Query */
 
 /* ------------------------ Fin About --------------------------- */
 
