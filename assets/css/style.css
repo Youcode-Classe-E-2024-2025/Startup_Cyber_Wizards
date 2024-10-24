@@ -593,6 +593,7 @@ padding-bottom: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 20px;
+  flex-wrap: wrap;
 }
 .titre{
     font-size: 30px;
@@ -605,11 +606,67 @@ padding-bottom: 20px;
 }
 .summary{
     font-size: 20px ;
+    cursor: pointer;
+  
+}
+/* ------------------------ MEDIA QUERY --------------------------- */    
+@media(max-width:600px) {
+
+.help{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom:  50px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.part1{
+  display: flex;
+  justify-content: center ;
+  gap: 50px;
+
+}
+.container1{
+  width: 150px;
+  height: 200px;
+  border: 5px solid;
+  text-align: center;
+  background-color: rgb(250, 250, 242);
+}
+.container1 svg{
+padding-bottom: 50px;
+height: 150px;
+width: 150px ;
+}
+.container2 svg{
+padding-bottom: 60px;
+height: 140px;
+width: 150px ;
+}
+.container1 h1{
+  padding-top: 30px;
+  font-size: 20px;
+}
+.container2{
+  width: 150px;;
+  height: 200px;
+  border: 5px solid;
+  text-align: center;
+  background-color: rgb(250, 250, 242);
+}
+.container2 h1{
+  padding-top: 30px;
+  font-size: 20px;
+}
+.part2{
+  margin-left: 50px;
+  margin-top: 40px;
+  margin-bottom: 100px;
 }
 
 
-    
- 
+
+
+}
 
 
 /* ------------------------ Fin FAQ --------------------------- */
