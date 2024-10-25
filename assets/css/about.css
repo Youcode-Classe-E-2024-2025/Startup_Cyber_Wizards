@@ -24,7 +24,6 @@
 
 body{
   overflow-x: hidden;
-
 }
 
 
@@ -216,8 +215,6 @@ h1 {
 .section1-image {
   flex: 1;
   margin-left: 30em;
-
-
 }
 
 .section1-image img {
@@ -297,20 +294,23 @@ h1 {
   }
 
   .section1-image img {
-    width: 250px;
-    height: 450px;
-
+    width: 170px;
+    height: 350px;
   }
 
   .section1-content {
-    margin-left: 0px;
+    margin-left: 80px;
     margin-right: 200px;
-    font-size: 20px;
     font-weight: 500;
     background-color: #ffffff;
     width: 250px;
-    height: 420px;
+    height: 300px;
   }
+  .section1-content p{
+    font-size:5vw;
+    text-wrap: wrap;
+    font-size: 15px;
+    }
 
   .grid-team {
 

@@ -286,6 +286,9 @@ header {
 }
 
 @media (max-width: 600px) {
+  .desc-Product h1{
+    font-size: 40px;
+  }
   .footer h3 {
     margin-left: 15px;
     font-size: 15px;
