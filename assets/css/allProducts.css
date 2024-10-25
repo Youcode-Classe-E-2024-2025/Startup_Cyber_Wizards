@@ -177,6 +177,9 @@ header {
   align-items: center;
   gap: 40px;
 }
+.Products .desc-Product h1{
+  text-align: center;
+}
 
 .group-card {
   display: flex;
