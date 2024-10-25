@@ -38,9 +38,9 @@ a {
   text-decoration: inherit;
 }
 
-input[type="radio"] {
-  /* display: none; */
-}
+/* input[type="radio"] {
+  display: none;
+} */
 
 /* ----------------------- Debut Navbar -------------------------- */
 nav {
@@ -161,7 +161,7 @@ header {
 }
 }
 
-/* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
+/*                        Debut Section            */
 
 .contentt{
   display: flex;
