@@ -196,7 +196,7 @@ header {
   margin-top: 10px;
 }
 
-.group-card .card button {
+.group-card .card .button {
   width: 150px;
   height: 1.5rem;
   color: var(--BG-white-color);
@@ -204,11 +204,16 @@ header {
   border-radius: 5px;
   border: none;
   margin-top: 5px;
+  padding: 0.3rem 0.5rem;
   cursor: pointer;
   transition: background-color 0.5s;
 }
 
-.group-card .card button:hover {
+.group-card .card p{
+  margin-bottom: .5rem;
+}
+
+.group-card .card .button:hover {
   background-color: var(--Hover-orange-color);
 }
 
