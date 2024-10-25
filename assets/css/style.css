@@ -15,7 +15,7 @@
   --scale-animation: 1.05;
 }
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,6 +23,7 @@
 }
 
 body{
+
   overflow-x: hidden;
 
 }
@@ -97,12 +98,12 @@ nav .links-nav i {
 .sidebar {
   position: absolute;
   top: 100%;
-  right: -250px;
   width: 150px;
   background-color: var(--BG-white-color);
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
   transition: right 0.3s ease;
   z-index: 999;
+  display: none;
 }
 
 header {
@@ -136,6 +137,7 @@ header {
 #menu-toggle:checked ~ .sidebar {
   right: 0;
   z-index: 2;
+  display:inline-block;
 }
 
 @media (max-width: 600px) {
@@ -151,7 +153,7 @@ header {
 @media (min-width: 601px) {
   .sidebar {
     right: -250px !important;
-  }
+}
 }
 
 /* ------------------------ Fin Navbar --------------------------- */
@@ -527,318 +529,12 @@ header {
 
 
 
-/* ----------------------- Debut Products page -------------------------- */
-
-
-
-
-/* ------------------------ Fin Products Page --------------------------- */
-
-
-
-
-/* ------------------------ Debut All products --------------------------- */
-
-.Products .desc-Product {
-  margin-top: 5rem;
-  font-size: 3rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-}
-
-.group-card {
-  /* padding: 30px 350px; */
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.group-card .card:hover {
-  transform: scale(var(--scale-animation));
-}
-
-.group-card .card {
-  background-color: var(--Cards-grey-color);
-  box-shadow: 0 0.1px 10px rgba(0, 0, 0, 0.299);
-  width: 16rem;
-  text-align: center;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 15px;
-  transition: transform 0.3s ease;
-}
-
-.group-card .card img {
-  height: 17rem;
-}
-
-.group-card .card .info-Tshirt {
-  margin-top: 10px;
-}
-
-.group-card .card button {
-  width: 150px;
-  height: 1.5rem;
-  color: var(--BG-white-color);
-  background-color: var(--Button-blue-color);
-  border-radius: 5px;
-  border: none;
-  margin-top: 5px;
-  cursor: pointer;
-  transition: background-color 0.5s;
-}
-
-.group-card .card button:hover {
-  background-color: var(--Hover-orange-color);
-}
-
-/* ------------------------ Fin All products --------------------------- */
 
 
 
 
 
-/* ------------------------ Debut About --------------------------- */
-.container {
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
 
-.section {
-  text-align: center;
-  padding: 50px 0;
-}
-
-h1 {
-  font-size: 36px;
-  margin-bottom: 30px;
-  font-weight: 800;
-}
-
-.section p {
-  max-width: 100%;
-  line-height: 1.6;
-  color: #000000;
-  font-size: 30px;
-
-}
-
-.section1 {
-  display: flex;
-  align-items: center;
-  padding: 40px 0px;
-  text-align: center;
-  justify-content: space-around;
-
-}
-
-.section1-content {
-  flex: 1;
-  background-color: #ffffff;
-  height: 400px;
-  width: 30rem;
-  position: absolute;
-  font-size: 28px;
-  margin-right: 250px;
-  padding: 10px;
-
-}
-
-.section1-image {
-  flex: 1;
-  margin-left: 30em;
-
-
-}
-
-.section1-image img {
-  height: 500px;
-  width: 100%;
-  max-width: 500px;
-  border-radius: 8px;
-}
-
-.section-team {
-  padding: 50px;
-  text-align: center;
-  justify-content: space-around;
-  margin-bottom: 50px;
-}
-
-.grid-team {
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-items: space-around;
-  gap: 30px;
-  margin-top: 90px;
-}
-
-.member-team {
-  text-align: center;
-  background-color: #f4f4f4;
-  width: 300px;
-  height: 330px;
-  border-radius: 15px;
-}
-
-.member-team img {
-  width: 300px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px 8px 0 0;
-  position: absolute;
-  display: flex;
-  transition: ease-out;
-  cursor: pointer;
-}
-
-
-.member-team h3 {
-  margin-bottom: 5px;
-  color: #333;
-  position: relative;
-  top: 260px;
-}
-
-.member-team i {
-  color: #666;
-  font-size: 20px;
-  position: relative;
-  top: 260px;
-
-}
-
-#img1 {
-  opacity: 0;
-}
-
-#img1:hover {
-  opacity: 1;
-}
-
-/* ------------------------ MEDIA QUERY --------------------------- */
-@media(max-width:600px) {
-
-  .section p{
-    font-size: 20px;
-  }
-  .section1-image {
-    margin-left: 10em;
-  }
-
-  .section1-image img {
-    width: 250px;
-    height: 450px;
-
-  }
-
-  .section1-content {
-    margin-left: 0px;
-    margin-right: 200px;
-    font-size: 20px;
-    font-weight: 500;
-    background-color: #ffffff;
-    width: 250px;
-    height: 420px;
-  }
-
-  .grid-team {
-
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    gap: 30px;
-  }
-
-  .member-team {
-    width: 180px;
-  }
-
-  .member-team img {
-    width: 180px;
-  }
-
-  .section-team {
-    padding: 1px;
-    text-align: center;
-    justify-content: space-around;
-    margin-bottom: 50px;
-  }
-}
-
-
-/* ------------------------ Fin Media Query Page about Us ----------------------- */
-
-/* ------------------------ Fin About --------------------------- */
-
-
-
-
-/* ------------------------ Debut FAQ --------------------------- */
-.help {
-  font-size: 50px;
-  text-align: center;
-  margin-bottom: 50px;
-  margin-top: 20px;
-  font-weight: 600;
-}
-.part1 {
-  display: flex;
-  justify-content: space-around;
-}
-.container1 {
-  width: 300px;
-  height: 300px;
-  border: 5px solid;
-  text-align: center;
-  background-color: rgb(250, 250, 242);
-  margin-left: 200px;
-}
-.container1 img {
-  height: 180px;
-  width: 120px;
-  margin-top: 20px;
-}
-.container1 h1 {
-  padding-top: 30px;
-}
-.container2 {
-  width: 300px;
-  height: 300px;
-  border: 5px solid;
-  text-align: center;
-  background-color: rgb(250, 250, 242);
-  margin-right: 200px;
-}
-.container2 img {
-  height: 170px;
-  width: 120px;
-  margin-top: 20px;
-}
-.container2 h1 {
-  padding-top: 30px;
-}
-.part2 {
-  margin-left: 100px;
-  margin-top: 40px;
-}
-.titre {
-  font-size: 25px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-.summary {
-  font-size: 20px;
-}
-
-/* ------------------------ Fin FAQ --------------------------- */
 
 
 
