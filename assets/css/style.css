@@ -150,15 +150,25 @@ header {
   } 
 }
 
-@media (min-width: 601px) {
-  .sidebar {
-    right: -250px !important;
-}
-}
-
 /* ------------------------ Fin Navbar --------------------------- */
 
 /* ----------------------- Debut index page -------------------------- */
+::selection{
+  color: white;
+  background-color: #ff6347;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 5ps grey;
+}
+::-webkit-scrollbar-thumb{
+  background: #ff6347;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6347;
+}
 
 /* Slider section */
 #slider {

@@ -97,12 +97,12 @@ nav .links-nav i {
 .sidebar {
   position: absolute;
   top: 100%;
-  right: -250px;
   width: 150px;
   background-color: var(--BG-white-color);
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
   transition: right 0.3s ease;
   z-index: 999;
+  display: none;
 }
 
 header {
@@ -136,26 +136,37 @@ header {
 #menu-toggle:checked ~ .sidebar {
   right: 0;
   z-index: 2;
+  display:inline-block;
 }
 
 @media (max-width: 600px) {
   nav .links-nav ul {
     display: none;
-  }
+  } 
 
   .burger-menu {
     display: inline-block;
   } 
 }
 
-@media (min-width: 601px) {
-  .sidebar {
-    right: -250px !important;
-  }
-}
-
 /* ------------------------ Fin Navbar --------------------------- */
 /* ------------------------ Debut All products --------------------------- */
+::selection{
+  color: white;
+  background-color: #ff6347;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 5ps grey;
+}
+::-webkit-scrollbar-thumb{
+  background: #ff6347;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6347;
+}
 
 .Products .desc-Product {
   margin-top: 5rem;
@@ -276,6 +287,9 @@ header {
     margin-left: 15px;
     font-size: 15px;
     text-align: center;
+  }
+  .group-card .card{
+    margin-right: 30px;
   }
 }
 
